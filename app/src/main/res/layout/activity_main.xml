@@ -10,55 +10,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dam.myapplication141116.MainActivity">
 
-    <view
+    <com.example.dam.myapplication141116.EditNumber
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        class="com.example.dam.myapplication141116.EditNumber"
-        android:layout_below="@+id/textView2"
+        android:id="@+id/editNumber3"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/editNumber1" />
+        android:layout_alignParentStart="true" />
 
     <com.example.dam.myapplication141116.EditNumber
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editNumber1"
+        android:id="@+id/editNumber2"
+        android:layout_above="@+id/editNumber3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/editNumber2" />
+        android:layout_alignParentStart="true" />
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.example.dam.myapplication141116.EditNumber"
+        android:id="@+id/editNumber1"
+        android:layout_above="@+id/editNumber2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/textView2"
-
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="134dp"
         android:id="@+id/resultText"
-        android:textSize="48sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="12dp" />
+        android:textSize="48sp"
+        android:layout_above="@+id/editNumber1"
+        android:layout_centerHorizontal="true" />
 
     <view
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/resultText"
         class="com.example.dam.myapplication141116.ColorView"
         android:id="@+id/colorView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/resultText" />
+
 </RelativeLayout>
